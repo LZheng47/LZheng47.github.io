@@ -66,18 +66,6 @@ nav *{
     margin-right:10px;
 }
 
-#mp{
-    flex-direction: column;
-}
-
-#mp a{
-    flex:1;
-}
-
-#mp h3{
-    display:inline;
-}
-
 .bar{
     background-color:black;
     color:white;
@@ -97,8 +85,7 @@ nav *{
 #main{
     color:white;
     overflow: hidden;
-    padding:30px 50px;
-    background-image:linear-gradient(45deg,rgba(56, 255, 99, 0.4),rgba(50, 190, 255, 0.4)), url("mainbg.jpg");
+    padding:30px 50px 60px 50px;
     background-position:center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -120,7 +107,8 @@ nav *{
 }
 
 #mainbottom h1{
-    text-shadow: 2px 2px 5px black;
+    width:max-content;
+    text-shadow: 3px 3px 6px black;
     font-size:45px;
     font-weight:bolder;
     letter-spacing:2px;
@@ -135,20 +123,20 @@ nav *{
 }
 
 #mainbottom hr{
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 3px 3px 6px black;
     margin-left:0px;
     max-width:470px;
     transition:0.5s;
 }
 
 #mainbottom h3{
-    text-shadow: 2px 2px 5px black;
-    letter-spacing:2px;
+    text-shadow: 4px 4px 3px black;
+    letter-spacing:2.5px;
     transition:0.5s;
 }
 
-#mainbottom h3:hover{
-    text-shadow: 3px 3px 3px black;
+#mainbottom h3:hover, #mainbottom p:hover{
+    text-shadow: 3px 3px 2px black;
     transition:0.5s;
 }
 
@@ -173,7 +161,7 @@ nav *{
 
 #upbutton:hover{
     cursor: pointer;
-    background-color: rgba(77, 118, 255, 0.6);
+    background-color: rgba(3, 0, 151, 0.6);
 }
 
 #tridivs{
@@ -201,7 +189,7 @@ nav *{
 
 #lefttri1, #righttri1{
     z-index:1;
-    background-color:white;
+    background-color:rgb(157, 255, 186);
     height:400px;
 }
 
@@ -224,4 +212,24 @@ nav *{
 
 #righttri2{
     transform: rotate(-15deg) translateY(-320px);
+}
+
+#content h2{
+    width:max-content;
+    margin:0px auto 20px auto;
+    letter-spacing:3px;
+    padding:12px 25px;
+    transition:0.5s;
+    color:rgba(0, 0, 0, 0.9);
+    background-color:rgba(211, 211, 211, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+#content h2:hover{
+    letter-spacing:4px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+    border-top: 2px solid rgba(0, 0, 0, 0.9);
+    transition:0.5s;
+    background-color:rgba(211, 211, 211, 0.9);
 }
