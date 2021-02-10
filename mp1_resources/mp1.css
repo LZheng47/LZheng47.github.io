@@ -1,0 +1,23 @@
+#mainbottom hr{
+    max-width:560px;
+}
+
+#main{
+    background-image:linear-gradient(45deg,rgba(255, 56, 245, 0.4),rgba(50, 98, 255, 0.4)), url("mp1bg.jpg");
+}
+
+#lefttri1, #righttri1{
+    background-color:rgb(180, 113, 255);
+}
+
+#content{
+    background-image: linear-gradient(0deg, white, rgb(180, 113, 255));
+}
+
+.mprows a{
+    background-image: linear-gradient(225deg, rgba(66, 148, 255,0.5), rgba(66, 148, 255,0.5)), url("mp1bg.jpg");
+}
+
+.mprows a:hover{
+    background-image: linear-gradient(225deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("mp1bg.jpg");
+}
