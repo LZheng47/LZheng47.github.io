@@ -1,0 +1,23 @@
+#mainbottom hr{
+    max-width:560px;
+}
+
+#main{
+    background-image:linear-gradient(45deg,rgba(255, 86, 86, 0.4),rgba(207, 51, 255, 0.4)), url("mp3bg.jpg");
+}
+
+#lefttri1, #righttri1{
+    background-color:rgb(255, 109, 109);
+}
+
+#content{
+    background-image: linear-gradient(0deg, white, rgb(255, 109, 109));
+}
+
+.mprows a{
+    background-image: linear-gradient(225deg, rgba(210, 96, 255, 0.4), rgba(210, 96, 255, 0.4)), url("mp3bg.jpg");
+}
+
+.mprows a:hover{
+    background-image: linear-gradient(225deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("mp3bg.jpg");
+}
