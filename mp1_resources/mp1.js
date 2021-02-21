@@ -10,7 +10,7 @@ function init(){
     navright.innerHTML = build;
 
     //mp1 setup
-    mpcomfortable(1, "mpas1", 15, 1, 1);
+    mpcomfortable(1, 1, 15, 1, 1);
     let mprows1_a = document.querySelectorAll(".mprows1 a");
     for(let x = 0; x < mprows1_a.length; x++){
         randompos(mprows1_a[x], 250, 1461, 250, 401)
