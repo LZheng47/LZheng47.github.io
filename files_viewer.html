@@ -33,7 +33,7 @@
             infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
             infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
 
-            window.fetch("${index_}")
+            window.fetch(`"${index_}"`)
             .then(function(response){
                 return response.text();
             }).then(function(data){
