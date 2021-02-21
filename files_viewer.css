@@ -65,13 +65,27 @@ body{
 }
 
 #infodisplay{
-    overflow-y: scroll;
-    overflow-x:scroll;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    max-height:250px;
+    overflow: auto;
     scrollbar-color: black;
     padding:10px;
     padding-bottom:0px;
     text-shadow:1px 1px 2px rgba(0,0,0,0.5);
 }
+
+#infodisplay *{
+    line-height: 20px;
+}
+
+/*
+#infodisplay xmp{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    word-wrap: normal;
+}
+*/
+
+/* https://speckyboy.com/snippets-beautiful-syntax-highlighting/ */
+
+/*text-overflow: ellipsis;*/

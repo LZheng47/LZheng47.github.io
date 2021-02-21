@@ -30,13 +30,14 @@
             let infodisplay = document.getElementById("infodisplay");
             let middleheader = document.getElementById("middleh");
             infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
+            infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
 
             window.fetch("index.txt")
             .then(function(response){
                 return response.text();
             }).then(function(data){
                 console.log(data);
-                document.getElementById("infodisplay").innerHTML = `<pre><code>${data}</code></pre>`;
+                document.getElementById("infodisplay").innerHTML = `<pre><xmp id="xmp">${data}</xmp></pre>`;
             });
         }
 
@@ -45,6 +46,7 @@
             let infodisplay = document.getElementById("infodisplay");
             let middleheader = document.getElementById("middleh");
             infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
+            infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
         });
     </script>
 
@@ -65,15 +67,6 @@
         <div id="middle">
             <h4 id="middleh"> FILE NAME </h4>
             <div id="infodisplay">
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
-                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
             </div>
         </div>
         <div id="right">
