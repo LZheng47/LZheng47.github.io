@@ -13,8 +13,9 @@
 
   </head>
   <body onload="init()">
-    <script >
-        var file_;
+    <script>
+        let index_ = localStorage.getItem("index_path");
+        console.log(index_);
         function init(){
             let navright = document.getElementById("navright");
             let build = "";
@@ -32,8 +33,7 @@
             infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
             infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
 
-            file_ = "index.html";
-            window.fetch(file_)
+            window.fetch(index_)
             .then(function(response){
                 return response.text();
             }).then(function(data){
