@@ -14,7 +14,7 @@
   </head>
   <body onload="init()">
     <script>
-        var file_content;
+        var file_;
         function init(){
             let navright = document.getElementById("navright");
             let build = "";
@@ -32,7 +32,8 @@
             infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
             infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
 
-            window.fetch("index.txt")
+            file_ = "index"
+            window.fetch(`${file_}.txt`)
             .then(function(response){
                 return response.text();
             }).then(function(data){
