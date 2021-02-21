@@ -31,9 +31,11 @@
             let middleheader = document.getElementById("middleh");
             infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 50}px`;
 
-            window.fetch('index.txt')
+            window.fetch("index.txt")
             .then(function(response){
-                console.log(response);
+                return response.text;
+            }).then(function(data){
+                document.getElementById("infodisplay").innerHTML = data;
             })
         }
 
