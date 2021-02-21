@@ -1,0 +1,71 @@
+body{
+    background-color:black;
+    height: 100%;
+    overflow: hidden;
+}
+
+#columns_{
+    display:flex;
+}
+
+#columns_ div{
+    flex:1;
+    box-shadow:inset 0px 2px 3px black;
+}
+
+#left{
+    max-width:230px;
+    background-image:linear-gradient(45deg, rgb(16, 110, 134), rgb(3, 25, 151));
+    color:rgb(6, 53, 114);
+}
+
+#left h4, #middle h4{
+    padding:7px;
+    text-align:center;
+    color:rgba(255,255,255,0.8);
+    font-weight:800;
+    letter-spacing: 5.5px;
+    margin:0px;
+    background-color:rgba(0,0,0,0.7);
+    padding-top:12px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    transition:0.5s;
+}
+
+#left h4:hover, #middle h4:hover{
+    letter-spacing: 6.5px;
+    transition:0.5s;
+}
+
+#middle{
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(26, 93, 156);
+    background-image:linear-gradient(225deg, rgb(18, 20, 138), rgb(115, 26, 156));
+}
+
+#middle div{
+    overflow-y: scroll;
+    max-height:250px;
+    scrollbar-color: black;
+}
+
+#right{
+    max-width:40px;
+    background-image:linear-gradient(225deg, rgb(18, 138, 102), rgb(58, 221, 145));
+    overflow: hidden;
+    display:flex;
+}
+
+#right a{
+    height: 100vh;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+#right img{
+    flex:1;
+    max-width:35px;
+}

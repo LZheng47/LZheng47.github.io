@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> WD Activity Solutions</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="mp.css" rel="stylesheet" type="text/css" />
+    <link href="files_viewer.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body onload="init()">
+    <script>
+        var file_content;
+        function init(){
+            let navright = document.getElementById("navright");
+            let build = "";
+
+            for(let x = 1; x <= 4; x++){
+                build += `<a href="mp${x}.html">`
+                build += `  <h4> MARKING PD ${x} </h4>`
+                build += `</a>`
+            }
+            navright.innerHTML = build;
+            
+            let middle = document.getElementById("middle");
+            let infodisplay = document.getElementById("infodisplay");
+            let middleheader = document.getElementById("middleh");
+            infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 50}px`;
+
+            window.fetch('index.txt')
+            .then(function(response){
+                console.log(response);
+            })
+        }
+
+        window.addEventListener("resize", function(){
+            let middle = document.getElementById("middle");
+            let infodisplay = document.getElementById("infodisplay");
+            let middleheader = document.getElementById("middleh");
+            infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 50}px`;
+        });
+    </script>
+
+    <nav class="vcenter" id="nav_">
+        <div id="navleft">
+            <a href="index.html" class="vcenter">
+                <img src="logo.png">
+                <h2> WD_ACTIVITY SOLUTIONS </h2>
+            </a>
+        </div>
+        
+        <div id="navright"></div>
+    </nav>
+    <div id="columns_">
+        <div id="left">
+            <h4> RESOURCES </h4>
+        </div>
+        <div id="middle">
+            <h4 id="middleh"> FILE NAME </h4>
+            <div id="infodisplay">
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+                x<br>x<br>x<br>x<br>x<br>x<br>x<br>
+            </div>
+        </div>
+        <div id="right">
+            <a href=""> <img src="load.png"> </a>  
+        </div>
+    </div>
+
+  </body>
+</html>
+
