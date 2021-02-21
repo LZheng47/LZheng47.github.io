@@ -35,8 +35,9 @@
             .then(function(response){
                 return response.text;
             }).then(function(data){
+                console.log(data);
                 document.getElementById("infodisplay").innerHTML = data;
-            })
+            });
         }
 
         window.addEventListener("resize", function(){
