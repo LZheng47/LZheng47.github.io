@@ -64,6 +64,8 @@ nav *{
 
 #navleft img{
     margin-right:10px;
+    border-radius:50%;
+    height:25px;
 }
 
 .bar{
