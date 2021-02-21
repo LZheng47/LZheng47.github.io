@@ -13,7 +13,7 @@
 
   </head>
   <body onload="init()">
-    <script>
+    <script >
         var file_;
         function init(){
             let navright = document.getElementById("navright");
@@ -41,7 +41,7 @@
                 document.getElementById("infodisplay").innerHTML = `<pre><xmp id="xmp">${data}</xmp></pre>`;
             });
         }
-
+        
         window.addEventListener("resize", function(){
             let middle = document.getElementById("middle");
             let infodisplay = document.getElementById("infodisplay");
@@ -49,6 +49,10 @@
             infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
             infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
         });
+    </script>
+
+    <script type="module">
+        import {pathway_} from "./mp.js";
     </script>
 
     <nav class="vcenter" id="nav_">

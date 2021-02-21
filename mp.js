@@ -26,43 +26,43 @@ function mpcomfortable(t, mpnum, ASamt, c, classnum){
 
     for(let x = 1; x <= ASamt/5; x++){
         build += `<div class="mprows mprows${classnum}">`
-        count += 1
-        build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:1"> T${t}_Lesson${count} </a>`
+        count++
+        build += `  <a href="files_viewer.html" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:1"> T${t}_Lesson${count} </a>`
 
-        count += 1
-        build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:2"> T${t}_Lesson${count} </a>`
+        count++
+        build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:2"> T${t}_Lesson${count} </a>`
         build += `</div>`
         build += `<div class="mprows mprows${classnum}">`
 
-        count += 1
-        build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:2"> T${t}_Lesson${count} </a>`
+        count++
+        build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:2"> T${t}_Lesson${count} </a>`
 
-        count += 1
-        build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:1"> T${t}_Lesson${count} </a>`
+        count++
+        build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:1"> T${t}_Lesson${count} </a>`
         build += `</div>`
         build += `<div class="mprows mprows${classnum}">`
 
-        count += 1
-        build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:1"> T${t}_Lesson${count} </a>`
+        count++
+        build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:1"> T${t}_Lesson${count} </a>`
         build += `</div>`
     }
 
     if(ASamtExtra == 4 || ASamtExtra == 2){
         for(let x = 0; x < 1; x++){
             build += `<div class="mprows mprows${classnum}">`
-            count += 1
-            build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:1"> T${t}_Lesson${count} </a>`
-            count += 1
-            build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:2"> T${t}_Lesson${count} </a>`
+            count++
+            build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:1"> T${t}_Lesson${count} </a>`
+            count++
+            build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:2"> T${t}_Lesson${count} </a>`
             build += `</div>`
         }
         if(ASamtExtra == 4){
             for(let x = 0; x < 1; x++){
                 build += `<div class="mprows mprows${classnum}">`
-                count += 1
-                build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:2"> T${t}_Lesson${count} </a>`
-                count += 1
-                build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:1"> T${t}_Lesson${count} </a>`
+                count++
+                build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:2"> T${t}_Lesson${count} </a>`
+                count++
+                build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:1"> T${t}_Lesson${count} </a>`
                 build += `</div>`
             }
         }
@@ -71,16 +71,16 @@ function mpcomfortable(t, mpnum, ASamt, c, classnum){
     if(ASamtExtra == 3 || ASamtExtra == 1){
         for(let x = 0; x < 1; x++){
             build += `<div class="mprows mprows${classnum}">`
-            count += 1
-            build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:1"> T${t}_Lesson${count} </a>`
+            count++
+            build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:1"> T${t}_Lesson${count} </a>`
 
             if(ASamtExtra == 3){
-                count += 1
-                build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:2"> T${t}_Lesson${count} </a>`
+                count++
+                build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:2"> T${t}_Lesson${count} </a>`
                 build += `</div>`
                 build += `<div class="mprows mprows${classnum}">`
-                count += 1
-                build += `  <a href="WD_T${t}_Lesson${count}_1.html" target="_blank" style="flex:1"> T${t}_Lesson${count} </a>`
+                count++
+                build += `  <a href="WD_T${t}_Lesson${count}_1.html" onclick="pathway(this)" data-pathway="WDT${t}Lesson${count}/index.html" style="flex:1"> T${t}_Lesson${count} </a>`
             }
 
             build += `</div>`
@@ -89,6 +89,11 @@ function mpcomfortable(t, mpnum, ASamt, c, classnum){
 
     mpas.innerHTML = build;
 }
+
+function pathway(obj){
+    let pathway_ = obj.data-pathway;
+}
+export { pathway_ };
 
 function randompos(obj, x1, x2, y1, y2){
     let xpos_ = Math.floor(Math.random()*x2) + x1;
