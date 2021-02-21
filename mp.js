@@ -90,11 +90,6 @@ function mpcomfortable(t, mpnum, ASamt, c, classnum){
     mpas.innerHTML = build;
 }
 
-function pathway(obj){
-    let pathway_ = obj.data-pathway;
-}
-export { pathway_ };
-
 function randompos(obj, x1, x2, y1, y2){
     let xpos_ = Math.floor(Math.random()*x2) + x1;
     let ypos_ = Math.floor(Math.random()*y2) + y1;
