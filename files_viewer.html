@@ -36,7 +36,7 @@
                 return response.text();
             }).then(function(data){
                 console.log(data);
-                document.getElementById("infodisplay").innerHTML = data;
+                document.getElementById("infodisplay").innerHTML = `<pre><code>${data}</code></pre>`;
             });
         }
 
