@@ -78,7 +78,6 @@ body{
     color:rgba(255,255,255,0.9);
 }
 
-/*
 #infodisplay xmp{
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
@@ -86,7 +85,7 @@ body{
     word-wrap: break-word;
     word-wrap: normal;
 }
-*/
+
 
 /* https://speckyboy.com/snippets-beautiful-syntax-highlighting/ */
 
