@@ -37,7 +37,7 @@
             .then(function(response){
                 return response.text();
             }).then(function(data){
-                document.getElementById("infodisplay").innerHTML = `<pre><xmp id="xmp">${data}</xmp></pre>`;
+                document.getElementById("infodisplay").innerHTML = `<xmp id="xmp">${data}</xmp>`;
             });
 
             let start = document.getElementById("start");
