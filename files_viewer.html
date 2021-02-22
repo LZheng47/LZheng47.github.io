@@ -39,6 +39,9 @@
             }).then(function(data){
                 document.getElementById("infodisplay").innerHTML = `<pre><xmp id="xmp">${data}</xmp></pre>`;
             });
+
+            let start = document.getElementById("start");
+            start.href = index_;
         }
         
         window.addEventListener("resize", function(){
@@ -70,7 +73,7 @@
             </div>
         </div>
         <div id="right">
-            <a href=""> <img src="load.png"> </a>  
+            <a href="" id="start"> <img src="load.png"> </a>  
         </div>
     </div>
 
