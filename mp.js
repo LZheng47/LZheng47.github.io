@@ -98,7 +98,7 @@ function mpcomfortable(t, mpnum, ASamt, c, classnum){
             build += `</div>`
         }
     }
-    mpas.innerHTML = build;
+    mpas.innerHTML += build;
 
     /*
     for(let x = 0; x < mpas.getElementsByTagName("div").length; x++){
