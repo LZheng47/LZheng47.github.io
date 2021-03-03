@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!-- Challenge 1: Create an onload event listener that calls an event handler "init()"-->
+  <body>
+    <script src="script.js"></script>
+    <div class="container" id="banner">
+      <h1>Data Calculators</h1>
+    </div>
+    <div class="container">
+      <div class="item" id="tipscalc">
+        <h3> Tip Calculator</h3>
+        <hr>
+        <!-- Challenge: Create a program that displays the tip amounts of 5%, 10%, 15%, 20% and 25% based on the total provided. Reference link: https://www.calculator.net/tip-calculator.html-->
+
+        <!-- Challenge 1: Create the UI for the tip program -->
+        <div id="tipUI">
+          <input type="text" placeholder="Enter total" id="total">
+          <input type="button" value="Calculate" onclick="tip()">
+        </div>
+        <div id="tips"> </div>
+        <!-- Challenge 2: Create the program in script.js -->
+      </div>
+      <div class="item" id="interestcalc">
+        <h3> Compound Interest Calculator</h3>
+        <hr>
+        <!-- Challenge: Create a program that calculates the amount in a bank that receives simple compound interest.  Display the balance in the bank account starting from Year 1 up to the last year the user enters.  Review the compound interest image in this repl.it. Reference link: https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator-->
+
+        <!-- Challenge 3: Create the UI for the simple compound interest program -->
+        <div id="interestUI">
+          <p> Enter Principal Amount </p>
+          <input type="text" placeholder="Principal" id="P">
+          <p> Enter Interest Rate </p>
+          <input type="text" placeholder="Interest Rate" id="r">
+          <p> Enter # of times compounded per unit "t" </p>
+          <input type="text" placeholder="Number" id="n">
+          <p> Enter Time (In years)</p>
+          <input type="text" placeholder="Years" id="t"> <br>
+          <input type="button" value="Calculate" onclick="interest()">
+        </div>
+        <div id="interest"></div>
+        <!-- Challenge 4: Create the program in script.js -->
+      </div>  
+    </div>
+  </body>
+</html>
