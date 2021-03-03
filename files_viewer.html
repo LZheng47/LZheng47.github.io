@@ -13,45 +13,7 @@
 
   </head>
   <body onload="init()">
-    <script>
-        let index_ = localStorage.getItem("index_path");
-        console.log(index_);
-        function init(){
-            let navright = document.getElementById("navright");
-            let build = "";
-
-            for(let x = 1; x <= 4; x++){
-                build += `<a href="mp${x}.html">`
-                build += `  <h4> MARKING PD ${x} </h4>`
-                build += `</a>`
-            }
-            navright.innerHTML = build;
-            
-            let middle = document.getElementById("middle");
-            let infodisplay = document.getElementById("infodisplay");
-            let middleheader = document.getElementById("middleh");
-            infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
-            infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
-
-            window.fetch(index_)
-            .then(function(response){
-                return response.text();
-            }).then(function(data){
-                document.getElementById("infodisplay").innerHTML = `<xmp id="xmp">${data}</xmp>`;
-            });
-
-            let start = document.getElementById("start");
-            start.href = index_;
-        }
-        
-        window.addEventListener("resize", function(){
-            let middle = document.getElementById("middle");
-            let infodisplay = document.getElementById("infodisplay");
-            let middleheader = document.getElementById("middleh");
-            infodisplay.style.maxHeight = `${middle.offsetHeight - middleheader.offsetHeight - 60}px`;
-            infodisplay.style.maxWidth = `${window.innerWidth - 270}px`;
-        });
-    </script>
+    <script src="files_viewer.js"></script>
 
     <nav class="vcenter" id="nav_">
         <div id="navleft">
@@ -65,18 +27,17 @@
     </nav>
     <div id="columns_">
         <div id="left">
-            <h4> RESOURCES </h4>
+            <h4 id="lefth"> RESOURCES </h4>
+            <div id="rsrcdisplay"></div>
         </div>
         <div id="middle">
-            <h4 id="middleh"> FILE NAME </h4>
-            <div id="infodisplay">
-            </div>
+            <h4 id="middleh"></h4>
+            <div id="infodisplay"></div>
         </div>
         <div id="right">
             <a href="" id="start" target="_blank"> <img src="load.png"> </a>  
         </div>
     </div>
-
   </body>
 </html>
 
