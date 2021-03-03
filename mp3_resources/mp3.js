@@ -8,11 +8,12 @@ function init(){
         build += `</a>`
     }
     navright.innerHTML = build;
-    
+    console.log("hello?");
     //mp3 setup    
-    mpcomfortable(2, 3, 2, 31, 3);
+    mpcomfortable(2, 3, 5, 31, 3);
+    mpcomfortable(3, 3, 1, 36, 3);
     let mprows3_a = document.querySelectorAll(".mprows3 a");
     for(let x = 0; x < mprows3_a.length; x++){
-        randompos(mprows3_a[x], 300, 800, 200, 600)
+        randompos(mprows3_a[x], 300, 800, 200, 600);
     }
 }
