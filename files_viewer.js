@@ -75,23 +75,29 @@ function init(){
         // More efficient way to handling arrays in objects where with [n], the nth key's value will be returned
     });
 
+    
+
     if(index_ >= 36){
         let term = 3;
+        start(term);
     }else{
         let term = 2;
+        start(term);
     }
 
-    fetch(`mp${mp}_resources/WDT${term}_Lesson${index_}_1/index.html`)
-    .then(function(response){
-        return response.text();
-    }).then(function(data){
-        document.getElementById("infodisplay").innerHTML = `<xmp id="xmp">${data}</xmp>`;
-        document.getElementById("middleh").innerHTML = `WDT${term}_Lesson${index_}_1/index.html`;
-        document.getElementById("rsrcdisplay").children[0].setAttribute("id","active");
-    });
+    function start(term){
+        fetch(`mp${mp}_resources/WDT${term}_Lesson${index_}_1/index.html`)
+        .then(function(response){
+            return response.text();
+        }).then(function(data){
+            document.getElementById("infodisplay").innerHTML = `<xmp id="xmp">${data}</xmp>`;
+            document.getElementById("middleh").innerHTML = `WDT${term}_Lesson${index_}_1/index.html`;
+            document.getElementById("rsrcdisplay").children[0].setAttribute("id","active");
+        });
 
-    let start = document.getElementById("start");
-    start.href = `mp${mp}_resources/WDT${term}_Lesson${index_}_1/index.html`;
+        let start = document.getElementById("start");
+        start.href = `mp${mp}_resources/WDT${term}_Lesson${index_}_1/index.html`;
+    }
 }
 
 window.addEventListener("resize", function(){
