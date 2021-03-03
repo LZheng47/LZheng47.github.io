@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <!-- Activity Overview: Create a web page to showcase the products from your store.  Customer will be able to filter the products by some category.  You must have a minimum of three categories of products with each category have at least three products.
+  
+  Challenge Bonuses Hints:
+  1) Add additional information displayed on each card beyond those described in script.js
+  2) Create additional categories of products for your store
+  3) Use a dropdown box instead of a text input for retrieving the filter information from the user
+  4) Add a one line description for each product
+   -->
+
+  <body onload="init()";>
+    <script src="script.js"></script>
+    <!-- Challenge 1: Using flexbox, create a banner stating the region. -->
+    <div id="banner"> 
+      <h3> Explore & purchase a variety of EPs, Singles, & Albums </h3>
+      <hr>
+      <h1> _DISCover </h1>
+    </div>
+    <div>
+      <div class="selectdiv">
+        <h3> Select An Artist: </h3>
+        <div class="selections">
+          <input type="button" value="ALL" onclick="selectCategory(this)">
+          <input type="button" value="Camila Cabello" onclick="selectCategory(this)">
+          <input type="button" value="Kehlani" onclick="selectCategory(this)">
+          <input type="button" value="Halsey" onclick="selectCategory(this)">
+          <input type="button" value="Bebe Rexha" onclick="selectCategory(this)">
+        </div>
+      </div>
+      <div class="selectdiv">
+        <h3> Select A Genre: </h3>
+        <div class="selections">
+          <input type="button" value="ALL" onclick="selectCategory(this)">
+          <input type="button" value="Pop" onclick="selectCategory(this)">
+          <input type="button" value="Rock" onclick="selectCategory(this)">
+          <input type="button" value="R&B" onclick="selectCategory(this)">
+        </div>
+      </div>
+      <div class="selectdiv">
+        <h3> Select A Release Year: </h3>
+        <div id="release" class="selections">
+          <input type="button" value="ALL" onclick="selectCategory(this)">
+          <input type="button" value="2015" onclick="selectCategory(this)">
+          <input type="button" value="2016" onclick="selectCategory(this)">
+          <input type="button" value="2017" onclick="selectCategory(this)">
+          <input type="button" value="2018" onclick="selectCategory(this)">
+          <input type="button" value="2019" onclick="selectCategory(this)">
+        </div>
+      </div>
+    </div>
+
+    <div id="count"> </div>
+    <div id="output">
+    </div>
+  </body>
+</html>
