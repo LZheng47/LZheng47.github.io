@@ -22,6 +22,7 @@ function init(){
   for(let i = 0; i < data.length; i++){
     data[i].price += 2;
   }
+  
   //Challenge 4: Display all the items in data that are less than $10
   for(let i = 0; i < data.length; i++){
     if(data[i].price < 10){
@@ -38,4 +39,5 @@ function init(){
     build += `  <h4> Purchase for $${data[i].price}! </h4>`;
     build += `</div>`;
   }
+  console.log(build);
 }
