@@ -131,6 +131,13 @@
                     "/index.html",
                     "/script.js"
                 ]
+            },
+            "lesson37_1":{
+                "path":"/WDT3_Lesson37_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js"
+                ]
             }
         }
     }
