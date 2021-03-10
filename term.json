@@ -138,6 +138,15 @@
                     "/index.html",
                     "/script.js"
                 ]
+            },
+            "lesson38_1":{
+                "path":"/WDT3_Lesson38_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css",
+                    "/data.js"
+                ]
             }
         }
     }
