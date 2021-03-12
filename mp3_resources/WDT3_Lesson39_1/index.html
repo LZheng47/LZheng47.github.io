@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="init()">
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <div class="container" id="banner">
+      <h1>Traffic Violations</h1>
+    </div>
+    <!-- Challenge 1: Add HTML to search by license plate number -->
+    <div id="searchdiv">
+      <input type="button" onclick="init()" value="ALL VIOLATIONS">
+      <input type="text" placeholder="License Plate #" id="plate">
+      <input type="button" onclick="searchLicense()" value="Search by License">
+      <!-- Challenge 2: Add HTML to search by a particular property of a violation -->
+      <input type="text" placeholder="Enter State" id="state">
+      <input type="button" onclick="searchState()" value="Search by State">
+      <!-- Challenge 3: Add HTML to search by another property of a violation -->
+      <input type="text" placeholder="Enter County" id="county">
+      <input type="button" onclick="searchCounty()" value="Search by County">
+      <!-- Challenge 4: Add HTML to search by both properties of a violation stated in Challenges 2 and 3-->
+      <input type="button" onclick="searchStateAndCounty()" value="Search by State & County">
+    </div>
+    <h3 id="msg"></h3>
+    <div class="container" id="output">
+    </div>
+  </body>
+</html>
