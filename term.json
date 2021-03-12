@@ -147,6 +147,15 @@
                     "/style.css",
                     "/data.js"
                 ]
+            },
+            "lesson39_1":{
+                "path":"/WDT3_Lesson39_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css",
+                    "/data.js"
+                ]
             }
         }
     }
