@@ -156,6 +156,22 @@
                     "/style.css",
                     "/data.js"
                 ]
+            },
+            "lesson40_1":{
+                "path":"/WDT3_Lesson40_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css"
+                ]
+            },
+            "lesson41_1":{
+                "path":"/WDT3_Lesson41_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css"
+                ]
             }
         }
     }
