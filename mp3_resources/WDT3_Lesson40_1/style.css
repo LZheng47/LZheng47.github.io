@@ -1,0 +1,54 @@
+.container{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.cards{
+  flex:1;
+  border:3px solid rgba(0,0,0,0.7);
+  margin:10px;
+  padding:10px;
+  min-width:260px;
+  background-color:white;
+  border-radius: 4px;
+}
+
+#banner{
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color:white
+}
+*{
+  font-family: 'Nunito', sans-serif;
+}
+
+html,body{
+  margin:0 auto;
+}
+#nav div{
+  flex:1;
+  text-align:center;
+  background-color: blue;
+  color:white;
+  padding:10px;
+  font-size:14pt;
+}
+#nav div:hover{
+  background-color: white;
+  color:blue;
+  cursor: pointer;
+}
+
+.indent{
+  margin-left:17px;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+
+.cards img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 4px;
+}
