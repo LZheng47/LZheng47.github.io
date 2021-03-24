@@ -172,6 +172,17 @@
                     "/script.js",
                     "/style.css"
                 ]
+            },
+            "lesson42_1":{
+                "path":"/WDT3_Lesson42_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css",
+                    "/c3.css",
+                    "/c3.js",
+                    "/d3.js"
+                ]
             }
         }
     }
