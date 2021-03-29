@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Challenge 1: Load the necessary files for this activity.  c3.css, jquery, d3.js, and c3.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="d3.js"></script>
+    <script src="c3.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="init()">
+    <div class="container" id="banner">
+      <h1>NYC Open Data - Vehicle Collisions</h1>
+    </div>
+    <div class="container" id="description">
+      <!-- Challenge 5: Write a paragrph that describes the output of what can be seen in the charts.  Complete this challenge last! -->
+      <p id="one"> 1) The pie chart illustrates where the most recent vehicle collisions are from, based on boroughs. Otherwise, the vehicle collisions are split among the following groups: Queens, Bronx, Brooklyn, Manhattan, Staten Island, and unknown (If the location of that collision had not been recorded). Most prominently, out of the collisions where the locations are known, Staten Island has the least number of vehicle collisions, and Brooklyn has the most. </p>
+      <p id="two"> 2) The first bar chart displays the frequency of different vehicle types involved in vehicle collisions. This include vehicle types such as Sedan, Bike, Station Wagon/Sports Utility Vehicle, and more. The vehicle that is most often involved in vehicle collisions are Sedans, and the second being Station Wagons/Sports Utility Vehicles.</p>
+      <p id="three"> 3) The second bar chart portrays some of the different vehicle collision times and the frequency of these times. The most frequent vehicle collision times includes 15:00 (3PM), 0:00 (12AM), 18:00 (6PM), and 12:00 (12PM). It can be argued that vehicle collisions occur most often at times when people are returning from or getting to work. </p>
+    </div>
+    
+    <div class="container" id="main">
+      <div id="pieChart"></div>
+      <div id="barChart"></div>
+      <div id="bonusChart"></div>
+    </div>
+    <div id="count"></div>
+    <div id="output"> </div>
+  </body>
+</html>

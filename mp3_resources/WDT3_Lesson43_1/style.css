@@ -1,0 +1,83 @@
+html,body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0 auto;
+  background-color:white;
+}
+
+.container{
+  display:flex;
+}
+
+#main{
+  flex-direction: column;
+}
+
+#pieChart{
+  min-height: 800px;
+}
+
+#banner{
+  justify-content: center;
+  align-self: center;
+  background-color: rgba(0,0,0,0.9);
+  color:white;
+  text-shadow: 1px 1px black;
+  margin-bottom:20px
+}
+
+#main div{
+  flex:1;
+  min-height:300px;
+  margin-bottom: 10px;
+}
+
+.cards{
+  background-color:rgb(255, 195, 195);
+  margin:10px;
+  padding:10px;
+  min-width: 250px;
+  flex:1;
+  border-radius: 5px;
+}
+
+#output{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.cards img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 4px;
+}
+
+#description{
+  padding:20px;
+}
+
+#description p{
+  flex:1;
+  padding:15px;
+  margin:5px;
+  border:3px solid rgba(0,0,0,0.7);
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.9);
+}
+
+#description #one{
+  background-color: rgba(202, 196, 255, 0.9);
+}
+
+#description #two{
+  background-color: rgba(234, 181, 255, 0.9);
+}
+
+#description #three{
+  background-color: rgba(255, 170, 227, 0.9);
+}
+
+#count{
+  display:block;
+  text-align: center;
+}
