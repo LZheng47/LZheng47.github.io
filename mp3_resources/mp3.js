@@ -10,7 +10,8 @@ function init(){
     navright.innerHTML = build;
     //mp3 setup    
     mpcomfortable(2, 3, 5, 31, 3);
-    mpcomfortable(3, 3, 9, 36, 3);
+    mpcomfortable(3, 3, 8, 36, 3);
+    mpcomfortable(4, 3, 1, 44, 3);
     let mprows3_a = document.querySelectorAll(".mprows3 a");
     for(let x = 0; x < mprows3_a.length; x++){
         randompos(mprows3_a[x], 300, 800, 200, 600);
