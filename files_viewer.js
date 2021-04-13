@@ -76,8 +76,10 @@ function init(){
     });
 
     
-
-    if(index_ >= 36){
+    if(index_ >= 44){
+        let term = 4;
+        start(term);
+    }else if(index_ >= 36){
         let term = 3;
         start(term);
     }else{

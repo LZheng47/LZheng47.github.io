@@ -195,6 +195,15 @@
                     "/d3.js",
                     "/data.js"
                 ]
+            },
+            "lesson44_1":{
+                "path":"/WDT3_Lesson43_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css",
+                    "/extra.js"
+                ]
             }
         }
     }
