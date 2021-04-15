@@ -204,6 +204,13 @@
                     "/style.css",
                     "/extra.js"
                 ]
+            },
+            "lesson45_1":{
+                "path":"/WDT4_Lesson45_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js"
+                ]
             }
         }
     }
