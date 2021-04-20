@@ -213,5 +213,18 @@
                 ]
             }
         }
+    },
+    "mp4":{
+        "path":"mp4_resources",
+        "lessons":{
+            "lesson46_1":{
+                "path":"/WDT4_Lesson46_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css"
+                ]
+            }
+        }
     }
 }

@@ -65,7 +65,7 @@ function init(){
             }
         }
 
-        let lesson = eval(`rsrc_data.mp3.lessons.lesson${index_}_1`);
+        let lesson = eval(`rsrc_data.mp${mp}.lessons.lesson${index_}_1`);
         let keyamt = Object.keys(lesson).length;
         if(keyamt > 2){
             buildfolders()
