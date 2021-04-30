@@ -240,6 +240,14 @@
                     "/script.js",
                     "/style.css"
                 ]
+            },
+            "lesson49_1":{
+                "path":"/WDT4_Lesson49_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css"
+                ]
             }
         }
     }
