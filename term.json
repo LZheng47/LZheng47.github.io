@@ -256,6 +256,17 @@
                     "/script.js",
                     "/style.css"
                 ]
+            },
+            "lesson51_1":{
+                "path":"/WDT4_Lesson51_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css",
+                    "Tsz_Ching_Ho_sm.png",
+                    "Willian_Lee_sm.png",
+                    "Yinyi_Feng_sm.png"
+                ]
             }
         }
     }
