@@ -4,9 +4,10 @@ function main(){
   //Challenge 4: Roll two dice.  If the sum of the dice, is 7 or 11 display "win" otherwise display "lose"
   let dice1 = rollDice();
   let dice2 = rollDice();
-  let msg = "You lose! You rolled a " + dice1 + " and a " + dice2 + ". The total is " + (dice1 + dice2) +", which is not 7 or 11." ;
-  if(dice1 + dice2 == 7 || dice1 + dice2 == 11){
-    msg = "You win! You rolled a " + dice1 + " and a " + dice2 + ". The total is " + (dice1 + dice2 ) + ".";
+  let sum = dice1 + dice2;
+  let msg = "You lose! You rolled a " + dice1 + " and a " + dice2 + ". The total is " + sum + ", which is not 7 or 11." ;
+  if(sum == 7 || sum == 11){
+    msg = "You win! You rolled a " + dice1 + " and a " + dice2 + ". The total is " + sum + ".";
   }
   console.log(msg);
 
