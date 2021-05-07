@@ -14,8 +14,7 @@ function main(){
   //Challenge 5: Make a call to randomQuote and display the output.
   console.log(randomQuote());
   //Challenge 6: Make a call to randomImage and display the output to the webpage.
-  randomImage();
-
+  document.getElementById("output").innerHTML = randomImage();
 }
 
 //Challenge 1: Create a function rollDice that returns a random number from 1 to 6.
@@ -40,8 +39,6 @@ function randomQuote(){
 
 //Challenge 3: Create a function randomImage that displays one of the images in this repl.it randomly.  Hint: Generate a random number from 1 to 3. Use the random number generated with a serious of if statements to display the image on the web page.  HTML Building!
 function randomImage(){
-  let output = document.getElementById("output");
-
   let n = Math.floor(Math.random() * 3) + 1;
   let img = "Yinyi_Feng_sm.png";
   if(n == 1){
@@ -50,7 +47,7 @@ function randomImage(){
     img = "Willian_Lee_sm.png";
   }
   
-  output.innerHTML = `<a href="${img}" target="_blank"> <img src="${img}"> </a>`;
+  return `<a href="${img}" target="_blank"> <img src="${img}"> </a>`;
 }
 
 
