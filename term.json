@@ -267,6 +267,31 @@
                     "/Willian_Lee_sm.png",
                     "/Yinyi_Feng_sm.png"
                 ]
+            },
+            "lesson52_1":{
+                "path":"/WDT4_Lesson52_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/style.css",
+                ],
+                "/alien":[
+                    "/ablock.png",
+                    "/akick.png",
+                    "/apunch.png",
+                    "/alienavatar.jpg"
+                ],
+                "/bk":[
+                    "/AirForceBase.jpg",
+                    "/Dojo.jpg",
+                    "/SuzakuCastle.jpg"
+                ],
+                "/soldier":[
+                    "/sblock.png",
+                    "/skick.png",
+                    "/spunch.png",
+                    "/soldieravatar.png"
+                ]
             }
         }
     }
