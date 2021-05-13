@@ -273,7 +273,7 @@
                 "resources":[
                     "/index.html",
                     "/script.js",
-                    "/style.css",
+                    "/style.css"
                 ],
                 "/alien":[
                     "/ablock.png",
