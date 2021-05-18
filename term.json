@@ -292,6 +292,16 @@
                     "/spunch.png",
                     "/soldieravatar.png"
                 ]
+            },
+            "lesson53_1":{
+                "path":"/WDT4_Lesson53_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/helper.js",
+                    "/style.css",
+                    "/compound-interest-formula-diagram.png"
+                ]
             }
         }
     }
