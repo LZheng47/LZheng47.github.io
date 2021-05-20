@@ -302,6 +302,15 @@
                     "/style.css",
                     "/compound-interest-formula-diagram.png"
                 ]
+            },
+            "lesson54_1":{
+                "path":"/WDT4_Lesson54_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/helper.js",
+                    "/style.css"
+                ]
             }
         }
     }
