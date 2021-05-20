@@ -9,7 +9,6 @@ function main(){
   let rollamt = getInt("How many times do you want to roll the dice?");
   let msg = "";
   let avg = simulatedDiceRoll(rollamt);
-  print(avg);
   if(avg > 4 ){
     msg = "You win! The average of the dice rolls was greater than 4";
   }else{
