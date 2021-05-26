@@ -311,6 +311,15 @@
                     "/helper.js",
                     "/style.css"
                 ]
+            },
+            "lesson55_1":{
+                "path":"/WDT4_Lesson55_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/helper.js",
+                    "/style.css"
+                ]
             }
         }
     }
