@@ -319,6 +319,16 @@
                     "/script.js",
                     "/helper.js",
                     "/style.css"
+                ],
+                "wp":[
+                    "/002.jpg",
+                    "/005.png",
+                    "/013.png",
+                    "/028.png",
+                    "/103.png",
+                    "/104.jpg",
+                    "/121.jpg",
+                    "/VioletEvergarden.gif"
                 ]
             }
         }
