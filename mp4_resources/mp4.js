@@ -9,7 +9,7 @@ function init(){
     }
     navright.innerHTML = build;
     //mp4 setup    
-    mpcomfortable(4, 4, 9, 46, 4);
+    mpcomfortable(4, 4, 10, 46, 4);
     let mprows4_a = document.querySelectorAll(".mprows4 a");
     for(let x = 0; x < mprows4_a.length; x++){
         randompos(mprows4_a[x], 300, 800, 200, 600);

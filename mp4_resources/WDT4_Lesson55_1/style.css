@@ -1,0 +1,46 @@
+body{
+    margin:0px auto;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(45deg, rgba(255, 102, 102, 0.4), rgba(91, 79, 255, 0.4)), url("bk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+#output{
+    overflow-y: scroll;
+    text-align: center;
+    height:100vh;
+    justify-content: center;
+}
+
+#output img{
+    height:auto;
+    width:50%;
+    margin-top:4px;
+    margin-bottom:4px;
+    border-radius: 5px;
+    border:3px solid rgba(0,0,0,0.7);
+    vertical-align:middle;
+    transition: 0.5s;
+}
+
+#output img:hover{
+    border:3px solid rgba(255, 69, 69, 0.7);
+    transition: 0.5s;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:rgba(0,0,0,0.4);
+}
