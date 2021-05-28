@@ -330,6 +330,14 @@
                     "/121.jpg",
                     "/VioletEvergarden.gif"
                 ]
+            },
+            "lesson56_1":{
+                "path":"/WDT4_Lesson56_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/helper.js"
+                ]
             }
         }
     }
