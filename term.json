@@ -338,6 +338,15 @@
                     "/script.js",
                     "/helper.js"
                 ]
+            },
+            "lesson57_1":{
+                "path":"/WDT4_Lesson57_1",
+                "resources":[
+                    "/index.html",
+                    "/script.js",
+                    "/helper.js",
+                    "/data.js"
+                ]
             }
         }
     }
