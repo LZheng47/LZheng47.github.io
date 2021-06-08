@@ -19,9 +19,11 @@ function main(){
   print("Driver Inattention/Distraction was the contributing factor that resulted in the most accidents.\n\n")
 
   // Challenge 5: How many people were injured in accidents?  Hint: There are different ways to accomplish.
-  injured = jsonCategories(data, "number_of_persons_injured");
-  print(injured);
-  print("In most accidents, no one was injured, but still frequent that one person or two were injured.\n\n");
+  injured = 0;
+  for(let i = 0; i < data.length; i++){
+    injured += parseInt(data[i].number_of_persons_injured)
+  }
+  print("A total of " + injured + " people were injured in the recent 1000 accidents.\n\n");
 
   // Challenge Bonus: Find some interesting information that you can aggregrate from the data.  Explain what the results state!
   deaths = jsonCategories(data, "number_of_persons_killed");
